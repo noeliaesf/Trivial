@@ -19,3 +19,7 @@ Creamos un test unitario "jugadoresEntre2y6"
 ## Problema 4
 
 En la clase "GameLauncher" creamos un nuevo boolean (ganador), aplicando la lógica de lo que tenemos, cambiamos el while de "noGanador" a "!ganador", (que significaría lo mismo).
+
+## Problema 5
+
+En la clase "Game", extraemos el código repetido del método "fueRespuestaCorrecta" y creamos el método "pasarSiguienteJugador", el cual sustituimos para que no haya una redundancia. 

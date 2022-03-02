@@ -130,9 +130,7 @@ public class Game {
 
                 return ganador;
             } else {
-                jugadorActual++;
-                if (jugadorActual == jugadores.size()) jugadorActual = 0;
-                return true;
+                return pasarSiguienteJugador();
             }
 
 
@@ -146,11 +144,7 @@ public class Game {
                     + monederos[jugadorActual]
                     + " monedas doradas.");
 
-            boolean ganador = jugadorHaGanado();
-            jugadorActual++;
-            if (jugadorActual == jugadores.size()) jugadorActual = 0;
-
-            return ganador;
+            return pasarSiguienteJugador();
         }
     }
 
@@ -174,5 +168,12 @@ public class Game {
                 + jugadores.get(jugadorActual)
                 + " es "
                 + posiciones[jugadorActual];
+    }
+
+    public boolean pasarSiguienteJugador () {
+        boolean ganador = jugadorHaGanado();
+        jugadorActual++;
+        if (jugadorActual == jugadores.size()) jugadorActual = 0;
+        return ganador;
     }
 }
