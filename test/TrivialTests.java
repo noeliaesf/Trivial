@@ -23,4 +23,16 @@ public class TrivialTests {
         String actual = sut.nuevaPosicionJugador();
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    public void menosDe2Jugadores() {
+        Game sut = new Game();
+        sut.agregar("Noelia");
+        sut.esJugable();
+
+        Boolean expected = false;
+        boolean actual = sut.esJugable();
+
+        Assertions.assertEquals(expected, actual);
+    }
 }
