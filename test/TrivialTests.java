@@ -29,10 +29,20 @@ public class TrivialTests {
         Game sut = new Game();
         sut.agregar("Noelia");
         sut.esJugable();
-
         Boolean expected = false;
         boolean actual = sut.esJugable();
+        Assertions.assertEquals(expected, actual);
+    }
 
+    @Test
+    public void jugadoresEntre2y6() {
+        Game sut = new Game();
+        sut.agregar("Noelia");
+        sut.agregar("Daniela");
+        sut.agregar("David");
+        sut.agregar("Elena");
+        Boolean expected = true;
+        boolean actual = sut.esJugable();
         Assertions.assertEquals(expected, actual);
     }
 }

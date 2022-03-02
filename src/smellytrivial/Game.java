@@ -33,6 +33,8 @@ public class Game {
     public boolean esJugable() {
         if (cuantosJugadores() <= 2) {
             return false;
+        } else if (cuantosJugadores() >= 6) {
+            return false;
         } else {
             return true;
         }
