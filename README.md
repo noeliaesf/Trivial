@@ -15,3 +15,7 @@ Creamos un test unitario "menosDe2Jugadores"
 
 En el método "esJugable", en el condicional anterior agregamos con else, que si hay más de 6 jugadores devuelva false también.
 Creamos un test unitario "jugadoresEntre2y6" 
+
+## Problema 4
+
+En la clase "GameLauncher" creamos un nuevo boolean (ganador), aplicando la lógica de lo que tenemos, cambiamos el while de "noGanador" a "!ganador", (que significaría lo mismo).

@@ -8,6 +8,7 @@ import java.util.Random;
 public class GameLauncher {
 
     private static boolean noGanador;
+    private static boolean ganador;
 
     public static void main(String[] args) {
         Game juego = new Game();
@@ -30,7 +31,7 @@ public class GameLauncher {
 
 
 
-        } while (noGanador);
+        } while (!ganador);
 
     }
 }
