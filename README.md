@@ -22,4 +22,8 @@ En la clase "GameLauncher" creamos un nuevo boolean (ganador), aplicando la lóg
 
 ## Problema 5
 
-En la clase "Game", extraemos el código repetido del método "fueRespuestaCorrecta" y creamos el método "pasarSiguienteJugador", el cual sustituimos para que no haya una redundancia. 
+En la clase "Game", extraemos el código repetido del método "fueRespuestaCorrecta" y creamos el método "pasarSiguienteJugador", el cual sustituimos para que no haya una redundancia.
+
+## Problema 6
+
+En el método "fueRespuestaCorrecta", extraemos fuera del if las lineas repetidas para que no tenerlas repetidas.
